@@ -207,7 +207,7 @@ $ git clone https://github.com/MohamedAbdelalim/catalog.git
 ```
 * Change the app name to ```FlaskApp```
 ```
-$ sudo mv ./Item-Catalog-master ./FlaskApp
+$ sudo mv ./catalog ./FlaskApp
 ```
 * Create and edit ```/etc/apache2/sites-available/FlaskApp.conf```
 ```
