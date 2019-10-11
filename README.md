@@ -1,4 +1,4 @@
-#How do to run the program?
+# How do to run the program?
 
 1. Downlaod and Install.
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads), VirtualBox6.0.10
