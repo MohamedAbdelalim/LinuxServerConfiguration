@@ -1,9 +1,9 @@
 # Linux Server Configuration
 
 1. Address
-* IP ADDRESS: 3.120.245.225
+* IP ADDRESS: 18.184.246.214
 * SSH port: 2200
-* URL : http://3.120.245.225/
+* URL : http://18.184.246.214/
 
 
 2. Software and Configuration
@@ -217,8 +217,8 @@ $ sudo nano /etc/apache2/sites-available/FlaskApp.conf
 * Paste the following in it
 ```
 <VirtualHost *:80>
-        ServerName 3.120.245.225
-        ServerAdmin admin@mywebsite.com
+        ServerName 18.184.246.214
+        ServerAdmin grader@18.184.246.214
         WSGIScriptAlias / /var/www/FlaskApp/flaskapp.wsgi
         <Directory /var/www/FlaskApp/FlaskApp/>
                 Order allow,deny
@@ -246,10 +246,10 @@ $ sudo nano /var/www/FlaskApp/flaskapp.wsgi
 import sys
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0,"/var/www/FlaskApp/FlaskApp/")
+sys.path.insert(0,"/var/www/FlaskApp/")
 
 # home points to the home.py file
-from application import app as ap
+from FlaskApp import app as ap
 ap.secret_key = "somesecretsessionkey"
 
 ```
